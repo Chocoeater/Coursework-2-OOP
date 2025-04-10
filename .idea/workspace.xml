@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d63d66-ab22-4194-baaf-a0aaee66fbc9" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/head_hunter_api.py" afterDir="false" />
+    <list default="true" id="f2d63d66-ab22-4194-baaf-a0aaee66fbc9" name="Changes" comment="add tests for utils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/head_hunter_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/head_hunter_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vacancies.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_vacancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vacancy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +29,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Chocoeater&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Chocoeater/Coursework-2-OOP.git&quot;,
+    &quot;accountId&quot;: &quot;f60c84eb-b6bc-45bf-ac34-52c353f027fb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -38,10 +61,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for conftest.test_connect_to_api_success.executor": "Run",
+    "Python tests.Python tests for test_api.test_connect_to_api_http_error.executor": "Run",
+    "Python tests.Python tests for test_api.test_connect_to_api_pages.executor": "Run",
+    "Python tests.Python tests for test_saver.test_add_vacancy_duplicate.executor": "Run",
+    "Python tests.Python tests for test_saver.test_add_vacancy_success.executor": "Run",
+    "Python tests.Python tests for test_saver.test_delete_vacancy_not_found.executor": "Run",
+    "Python tests.Python tests for test_saver.test_delete_vacancy_success.executor": "Run",
+    "Python tests.Python tests for test_saver.test_get_all_vacancies.executor": "Run",
+    "Python tests.Python tests for test_saver.test_search_vacancies_by_keyword.executor": "Run",
+    "Python tests.Python tests for test_saver.test_search_vacancies_by_salary.executor": "Run",
+    "Python tests.Python tests for test_utils.test_add_vacancy_manually.executor": "Run",
+    "Python tests.Python tests for test_utils.test_delete_vacancy_interactive_not_found.executor": "Run",
+    "Python tests.Python tests for test_utils.test_delete_vacancy_interactive_success.executor": "Run",
+    "Python tests.Python tests for test_utils.test_salary_print.executor": "Run",
+    "Python tests.Python tests for test_utils.test_search_in_saved_vacancies.executor": "Run",
+    "Python tests.Python tests for test_utils.test_search_vacancies_in_hh.executor": "Run",
+    "Python tests.Python tests for test_utils.test_show_saved_vacancies.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_cast_to_object_list.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_comparison_operators.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_missing_fields_in_json.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_to_dict.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_vacancy_creation.executor": "Run",
+    "Python tests.Python tests for test_vacancy.test_vacancy_without_salary.executor": "Run",
+    "Python tests.Python tests in test_req.py.executor": "Run",
+    "Python tests.Python tests in test_saver.py.executor": "Run",
+    "Python tests.Python tests in test_utils.py.executor": "Run",
     "Python.head_hunter_api.executor": "Run",
+    "Python.help.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.vacancies.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#1 on feature__1"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,8 +102,8 @@
       <recent name="C:\Users\Fosters PC\Desktop\Skypro\coursework_2_oop" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="head_hunter_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coursework_2_oop" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/head_hunter_api.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,16 +125,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_utils.test_delete_vacancy_interactive_not_found" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="coursework_2_oop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_delete_vacancy_interactive_not_found&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_utils.test_delete_vacancy_interactive_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="coursework_2_oop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_delete_vacancy_interactive_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_utils.test_search_in_saved_vacancies" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="coursework_2_oop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_search_in_saved_vacancies&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_utils.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="coursework_2_oop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_utils.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.head_hunter_api" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests in test_utils.py" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_delete_vacancy_interactive_not_found" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_delete_vacancy_interactive_success" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_search_in_saved_vacancies" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -102,7 +219,103 @@
       <option name="project" value="LOCAL" />
       <updated>1743272079735</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add parser">
+      <option name="closed" value="true" />
+      <created>1743335687310</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743335687310</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add classmethod in Vacancy">
+      <option name="closed" value="true" />
+      <created>1743447556647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743447556647</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add comparisons">
+      <option name="closed" value="true" />
+      <created>1743534643651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743534643652</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add abstract class json saver">
+      <option name="closed" value="true" />
+      <created>1743535824585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743535824585</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add json-saver">
+      <option name="closed" value="true" />
+      <created>1743624790171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743624790171</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update API and vac">
+      <option name="closed" value="true" />
+      <created>1743879255850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743879255850</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add user_inter but sad api dont work">
+      <option name="closed" value="true" />
+      <created>1743962056153</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743962056153</updated>
+    </task>
+    <task id="LOCAL-00009" summary="done utils, all work">
+      <option name="closed" value="true" />
+      <created>1744056910885</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744056910885</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add tests for api">
+      <option name="closed" value="true" />
+      <created>1744113459309</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744113459309</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add tests for saver">
+      <option name="closed" value="true" />
+      <created>1744115758196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744115758196</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add tests for vacancy">
+      <option name="closed" value="true" />
+      <created>1744117073612</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744117073612</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add tests for utils">
+      <option name="closed" value="true" />
+      <created>1744119907188</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744119907188</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +331,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add parser" />
+    <MESSAGE value="add classmethod in Vacancy" />
+    <MESSAGE value="add comparisons" />
+    <MESSAGE value="add abstract class json saver" />
+    <MESSAGE value="add json-saver" />
+    <MESSAGE value="update API and vac" />
+    <MESSAGE value="add user_inter but sad api dont work" />
+    <MESSAGE value="done utils, all work" />
+    <MESSAGE value="add tests for api" />
+    <MESSAGE value="add tests for saver" />
+    <MESSAGE value="add tests for vacancy" />
+    <MESSAGE value="add tests for utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for utils" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

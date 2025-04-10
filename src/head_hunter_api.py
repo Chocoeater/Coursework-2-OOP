@@ -1,38 +1,41 @@
 from abc import ABC, abstractmethod
 import requests
+from requests.exceptions import HTTPError, RequestException
 
 
 class BaseHeadHunterAPI(ABC):
-    """
-    Абстрактный класс для работы с API hh.ru
-    """
+    @abstractmethod
+    def _connect_to_api(self, keyword: str) -> None:
+        pass
 
     @abstractmethod
-    def get_vacancies(self, keyword: str) -> str:
-        """
-        Получает вакансии с hh.ru
-        :param keyword: Ключевое слово для поиска
-        :return: Строка в формате JSON
-        """
+    def get_vacancies(self, keyword: str) -> list:
+        pass
 
 
 class HeadHunterAPI(BaseHeadHunterAPI):
     def __init__(self):
-        self.url = "https://api.hh.ru/vacancies"
-        self.headers = {'User-Agent': 'HH-User-Agent'}
-        self.params = {'text': '', 'page': 0, 'per_page': 100}
-        self.vacancies = []
+        self.api_url = "https://api.hh.ru/vacancies"
+        self.__headers = {"User-Agent": "HH-User-Agent"}
+        self.__params = {"text": "", "page": 0, "per_page": 100}
+        self.__vacancies = []
 
-    def get_vacancies(self, keyword):
-        self.params['text'] = keyword
-        while self.params.get('page') != 20:
-            response = requests.get(self.url, headers=self.headers, params=self.params)
-            vacancies = response.json()['items']
-            self.vacancies.extend(vacancies)
-            self.params['page'] += 1
+    def _connect_to_api(self, keyword, pages: int = 1):
+        self.__params["text"] = keyword
+        self.__params["page"] = 0
+        self.__vacancies = []
+        try:
+            while self.__params["page"] < pages:
+                response = requests.get(self.api_url, headers=self.__headers, params=self.__params)
+                response.raise_for_status()
+                vacancies = response.json().get("items", [])
+                self.__vacancies.extend(vacancies)
+                self.__params["page"] += 1
+        except HTTPError as e:
+            print(f"Ошибка API: {e}")
+        except RequestException as e:
+            print(f"Сетевая ошибка: {e}")
 
-
-if __name__ == '__main__':
-    hh_api = HeadHunterAPI()
-    hh_api.get_vacancies('Python')
-    print(hh_api.vacancies)
+    def get_vacancies(self, keyword, pages: int = 1) -> list:
+        self._connect_to_api(keyword, pages)
+        return self.__vacancies
